@@ -1,17 +1,12 @@
 
-// =========================================
-// DARK / LIGHT THEME TOGGLE
-// =========================================
+
 
 const themeToggle = document.getElementById("theme-toggle");
 
-// Load previously saved theme
 const savedTheme = localStorage.getItem("portfolio-theme") || "dark";
 
-// Apply saved theme
 document.documentElement.setAttribute("data-theme", savedTheme);
 
-// Update button text
 function updateThemeButton(theme) {
 
     if (!themeToggle) return;
@@ -31,10 +26,8 @@ function updateThemeButton(theme) {
     }
 }
 
-// Initialize button
 updateThemeButton(savedTheme);
 
-// Toggle theme on click
 if (themeToggle) {
 
     themeToggle.addEventListener("click", function () {
@@ -45,18 +38,86 @@ if (themeToggle) {
         const newTheme =
             currentTheme === "dark" ? "light" : "dark";
 
-        // Apply new theme
         document.documentElement.setAttribute(
             "data-theme",
             newTheme
         );
 
-        // Save preference
         localStorage.setItem("portfolio-theme", newTheme);
 
-        // Update button
         updateThemeButton(newTheme);
 
     });
 
+}
+
+
+
+
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+if (menuToggle && navLinks) {
+
+    menuToggle.addEventListener("click", function () {
+
+        const isOpen = navLinks.classList.toggle("show");
+
+        menuToggle.setAttribute(
+            "aria-expanded",
+            isOpen
+        );
+
+        menuToggle.setAttribute(
+            "aria-label",
+            isOpen ? "Close navigation menu" : "Open navigation menu"
+        );
+
+        menuToggle.textContent = isOpen ? "✕" : "☰";
+
+    });
+
+   
+    navLinks.querySelectorAll("a").forEach(link => {
+
+        link.addEventListener("click", function () {
+
+            navLinks.classList.remove("show");
+
+            menuToggle.setAttribute("aria-expanded", "false");
+
+            menuToggle.setAttribute(
+                "aria-label",
+                "Open navigation menu"
+            );
+
+            menuToggle.textContent = "☰";
+
+        });
+
+    });
+
+}
+
+const contactForm = document.getElementById("contact-form");
+const formStatus = document.getElementById("form-status");
+
+if (contactForm && formStatus) {
+    contactForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        if (!contactForm.checkValidity()) {
+            contactForm.reportValidity();
+            return;
+        }
+
+        const name = document.getElementById("name").value.trim();
+
+        formStatus.textContent =
+            `Thank you, ${name}! Your message has been received in this demo.`;
+
+        formStatus.style.color = "#22C55E";
+
+        contactForm.reset();
+    });
 }
