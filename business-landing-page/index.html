@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover premium homes, apartments and commercial properties with EstateVista. Find a property that feels like home.">
+    <title>EstateVista | Find a Place to Call Home</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header" id="home">
+        <nav class="navbar container">
+
+            <a href="#home" class="logo">
+                <span class="logo-icon">E</span>
+                <span>Estate<span class="logo-highlight">Vista</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#properties" class="nav-link">Properties</a></li>
+                <li><a href="#about" class="nav-link">About Us</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <a href="#contact" class="btn btn-primary nav-btn">List Your Property</a>
+
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section class="hero" id="hero">
+            <div class="hero-overlay"></div>
+
+            <div class="container hero-content">
+                <span class="section-tag">FIND YOUR PLACE IN THE WORLD</span>
+
+                <h1>Find a Place<br>to <span>Call Home.</span></h1>
+
+                <p>
+                    From beautiful family homes to modern city apartments,
+                    discover properties that match your lifestyle and your dreams.
+                </p>
+
+                <div class="hero-buttons">
+                    <a href="#properties" class="btn btn-primary">Explore Properties</a>
+                    <a href="#about" class="btn btn-outline">Discover EstateVista</a>
+                </div>
+
+                <div class="hero-note">
+                    <span class="hero-note-line"></span>
+                    <span>Helping you find more than just a property</span>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="property-search section-padding">
+            <div class="container">
+
+                <div class="search-heading">
+                    <div>
+                        <span class="section-tag">START YOUR SEARCH</span>
+                        <h2>Find Your Perfect Property</h2>
+                    </div>
+                    <p>Choose your preferences and explore available properties.</p>
+                </div>
+
+                <form class="search-form" id="property-search">
+
+                    <div class="search-field">
+                        <label for="location">Location</label>
+                        <select id="location" name="location">
+                            <option value="">All Locations</option>
+                            <option value="Mohali">Mohali</option>
+                            <option value="Chandigarh">Chandigarh</option>
+                            <option value="Panchkula">Panchkula</option>
+                            <option value="Zirakpur">Zirakpur</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <label for="property-type">Property Type</label>
+                        <select id="property-type" name="property-type">
+                            <option value="">All Types</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Villa">Villa</option>
+                            <option value="House">House</option>
+                            <option value="Commercial">Commercial</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <label for="budget">Maximum Budget</label>
+                        <select id="budget" name="budget">
+                            <option value="">Any Budget</option>
+                            <option value="5000000">Up to ₹50 Lakh</option>
+                            <option value="10000000">Up to ₹1 Crore</option>
+                            <option value="20000000">Up to ₹2 Crore</option>
+                            <option value="50000000">Up to ₹5 Crore</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary search-btn">
+                        Search Properties
+                    </button>
+
+                </form>
+            </div>
+        </section>
+
+
+        <section class="properties section-padding" id="properties">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">EXPLORE OUR COLLECTION</span>
+                        <h2>Featured Properties</h2>
+                    </div>
+
+                    <p>
+                        Explore a selection of properties chosen
+                        for different lifestyles and needs.
+                    </p>
+                </div>
+
+                <div class="property-filters">
+                    <button class="filter-btn active" data-filter="all">All Properties</button>
+                    <button class="filter-btn" data-filter="Apartment">Apartments</button>
+                    <button class="filter-btn" data-filter="Villa">Villas</button>
+                    <button class="filter-btn" data-filter="House">Family Homes</button>
+                    <button class="filter-btn" data-filter="Commercial">Commercial</button>
+                </div>
+
+                <div class="property-grid" id="property-grid">
+
+                    <article class="property-card" data-type="Apartment" data-location="Mohali" data-price="8500000">
+                        <div class="property-image">
+                            <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=900&q=85" alt="Modern luxury apartment interior">
+                            <span class="property-badge">Featured</span>
+                            <span class="property-type">Apartment</span>
+                        </div>
+
+                        <div class="property-info">
+                            <span class="property-location">Mohali, Punjab</span>
+                            <h3>Modern Luxury Apartment</h3>
+                            <div class="property-details">
+                                <span>3 Bedrooms</span>
+                                <span>2 Bathrooms</span>
+                                <span>1,650 sq.ft.</span>
+                            </div>
+                            <div class="property-bottom">
+                                <span class="property-price">₹85 Lakh</span>
+                                <a href="#contact" class="property-link">Enquire Now →</a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="property-card" data-type="Villa" data-location="Chandigarh" data-price="25000000">
+                        <div class="property-image">
+                            <img src="https://images.unsplash.com/photo-1613490493576-7fde63acd811?w=900&q=85" alt="Contemporary luxury villa with landscaped exterior">
+                            <span class="property-badge">Premium</span>
+                            <span class="property-type">Villa</span>
+                        </div>
+
+                        <div class="property-info">
+                            <span class="property-location">Chandigarh</span>
+                            <h3>Elegant Garden Villa</h3>
+                            <div class="property-details">
+                                <span>4 Bedrooms</span>
+                                <span>4 Bathrooms</span>
+                                <span>3,200 sq.ft.</span>
+                            </div>
+                            <div class="property-bottom">
+                                <span class="property-price">₹2.5 Crore</span>
+                                <a href="#contact" class="property-link">Enquire Now →</a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="property-card" data-type="House" data-location="Zirakpur" data-price="6500000">
+                        <div class="property-image">
+                            <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?w=900&q=85" alt="Contemporary family house with a landscaped front yard">
+<span class="property-badge">Featured</span>
+<span class="property-type">Family Home</span>
+                        </div>
+
+                        <div class="property-info">
+                            <span class="property-location">Zirakpur, Punjab</span>
+                            <h3>Contemporary Family Home</h3>
+                            <div class="property-details">
+                                <span>3 Bedrooms</span>
+                                <span>3 Bathrooms</span>
+                                <span>1,900 sq.ft.</span>
+                            </div>
+                            <div class="property-bottom">
+                                <span class="property-price">₹65 Lakh</span>
+                                <a href="#contact" class="property-link">Enquire Now →</a>
+                            </div>
+                        </div>
+                    </article>
+
+
+                    <article class="property-card" data-type="Commercial" data-location="Panchkula" data-price="15000000">
+                        <div class="property-image">
+                            <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?w=900&q=85" alt="Modern commercial office space with glass walls">
+<span class="property-badge">Featured</span>
+<span class="property-type">Commercial</span>
+                        </div>
+
+                        <div class="property-info">
+                            <span class="property-location">Panchkula, Haryana</span>
+                            <h3>Modern Office Space</h3>
+                            <div class="property-details">
+                                <span>Open Layout</span>
+                                <span>2 Meeting Rooms</span>
+                                <span>2,400 sq.ft.</span>
+                            </div>
+                            <div class="property-bottom">
+                                <span class="property-price">₹1.5 Crore</span>
+                                <a href="#contact" class="property-link">Enquire Now →</a>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+
+                <p class="no-results" id="no-results" hidden>
+                    No properties match your search. Try changing your filters.
+                </p>
+
+            </div>
+        </section>
+
+
+        <section class="about section-padding" id="about">
+            <div class="container about-grid">
+
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?w=1000&q=85" alt="Beautiful modern residential interior">
+                    <div class="about-image-caption">
+                        <span>ESTATEVISTA</span>
+                        <p>Where every space tells a story.</p>
+                    </div>
+                </div>
+
+                <div class="about-content">
+                    <span class="section-tag">A LITTLE ABOUT US</span>
+
+                    <h2>More Than Property. <span>A Place to Belong.</span></h2>
+
+                    <p>
+                        Finding the right property is about more than location
+                        and price. It's about discovering a space where your
+                        next chapter can begin.
+                    </p>
+
+                    <p>
+                        At EstateVista, we make the property search experience
+                        simpler by helping buyers, sellers and investors explore
+                        opportunities that suit their goals.
+                    </p>
+
+                    <div class="about-points">
+                        <div>
+                            <span class="about-check">✓</span>
+                            <span>Personalised property guidance</span>
+                        </div>
+                        <div>
+                            <span class="about-check">✓</span>
+                            <span>Property options for different budgets</span>
+                        </div>
+                        <div>
+                            <span class="about-check">✓</span>
+                            <span>Support throughout your property journey</span>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn btn-primary">Talk to Our Team</a>
+                </div>
+
+            </div>
+        </section>
+
+
+        <section class="services section-padding" id="services">
+            <div class="container">
+
+                <div class="section-heading">
+                    <div>
+                        <span class="section-tag">WHAT WE OFFER</span>
+                        <h2>Real Estate Services</h2>
+                    </div>
+
+                    <p>
+                        From your first property search to the final decision,
+                        we're here to make the process easier.
+                    </p>
+                </div>
+
+                <div class="services-grid">
+
+                    <article class="service-card">
+                        <div class="service-icon">⌂</div>
+                        <h3>Buy a Property</h3>
+                        <p>
+                            Explore homes and investment opportunities
+                            that suit your lifestyle and budget.
+                        </p>
+                        <a href="#contact">Explore More →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">↗</div>
+                        <h3>Sell Your Property</h3>
+                        <p>
+                            Present your property to potential buyers
+                            and receive assistance throughout the process.
+                        </p>
+                        <a href="#contact">Explore More →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">⌂</div>
+                        <h3>Rental Assistance</h3>
+                        <p>
+                            Find suitable rental spaces for comfortable
+                            living or business requirements.
+                        </p>
+                        <a href="#contact">Explore More →</a>
+                    </article>
+
+                    <article class="service-card">
+                        <div class="service-icon">◇</div>
+                        <h3>Property Consultation</h3>
+                        <p>
+                            Get guidance to understand property options
+                            and make informed decisions.
+                        </p>
+                        <a href="#contact">Explore More →</a>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="why-us section-padding">
+            <div class="container">
+
+                <div class="why-heading">
+                    <span class="section-tag">THE ESTATEVISTA DIFFERENCE</span>
+                    <h2>A Better Way to Find Your Next Property.</h2>
+                    <p>
+                        We focus on making your property journey clear,
+                        comfortable and centred around your needs.
+                    </p>
+                </div>
+
+                <div class="why-grid">
+
+                    <div class="why-card">
+                        <span class="why-number">01</span>
+                        <h3>Personal Approach</h3>
+                        <p>We take time to understand what matters to you before exploring property options.</p>
+                    </div>
+
+                    <div class="why-card">
+                        <span class="why-number">02</span>
+                        <h3>Carefully Selected Options</h3>
+                        <p>Explore a variety of property types, locations and price ranges in one place.</p>
+                    </div>
+
+                    <div class="why-card">
+                        <span class="why-number">03</span>
+                        <h3>Clear Communication</h3>
+                        <p>Get straightforward information and assistance throughout your search.</p>
+                    </div>
+
+                    <div class="why-card">
+                        <span class="why-number">04</span>
+                        <h3>Ongoing Support</h3>
+                        <p>We aim to make each stage of your property journey easier to navigate.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contact section-padding" id="contact">
+            <div class="container contact-grid">
+
+                <div class="contact-content">
+                    <span class="section-tag">LET'S FIND YOUR PLACE</span>
+
+                    <h2>Ready to Take the <span>Next Step?</span></h2>
+
+                    <p>
+                        Tell us what you're looking for. Whether you want to
+                        buy, sell or rent, our team would love to hear from you.
+                    </p>
+
+                    <div class="contact-detail">
+                        <span>EMAIL</span>
+                        <a href="mailto:sharmakanav53@gmail.com">sharmakanav53@gmail.com</a>
+                    </div>
+
+                    <div class="contact-detail">
+                        <span>LOCATION</span>
+                        <p>Mohali, Punjab, India</p>
+                    </div>
+                </div>
+
+
+                <div class="contact-form-card">
+                    <h3>Send Us an Enquiry</h3>
+                    <p>Share a few details and we'll be happy to assist.</p>
+
+                    <form id="contact-form">
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" placeholder="you@example.com" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" placeholder="+91 00000 00000" pattern="[6-9][0-9]{9}" maxlength="10" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interest">I'm Interested In</label>
+                            <select id="interest" name="interest" required>
+                                <option value="">Select an option</option>
+                                <option value="buy">Buying a property</option>
+                                <option value="sell">Selling a property</option>
+                                <option value="rent">Renting a property</option>
+                                <option value="consultation">Property consultation</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="4" placeholder="Tell us what you're looking for..." minlength="10" required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary submit-btn">
+                            Send Enquiry
+                        </button>
+
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-main">
+
+                <div class="footer-brand">
+                    <a href="#home" class="logo">
+                        <span class="logo-icon">E</span>
+                        <span>Estate<span class="logo-highlight">Vista</span></span>
+                    </a>
+
+                    <p>
+                        Helping you discover spaces that feel right,
+                        opportunities that make sense and places to call home.
+                    </p>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Explore</h3>
+                    <a href="#home">Home</a>
+                    <a href="#properties">Properties</a>
+                    <a href="#about">About Us</a>
+                    <a href="#services">Services</a>
+                </div>
+
+                <div class="footer-links">
+                    <h3>Get in Touch</h3>
+                    <a href="#contact">Contact Us</a>
+                    <a href="#contact">Property Enquiry</a>
+                    <a href="mailto:sharmakanav53@gmail.com">Email Us</a>
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>© 2026 EstateVista. All rights reserved.</p>
+               
+            </div>
+
+        </div>
+    </footer>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>
