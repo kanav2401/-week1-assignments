@@ -1,0 +1,197 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A CSS Playground demonstrating Flexbox, CSS Grid and modern animations.">
+    <title>CSS Playground | Web Development Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container navbar">
+            <a href="#" class="logo">CSS<span>Playground</span></a>
+
+            <nav class="nav-links">
+                <a href="#flexbox">Flexbox</a>
+                <a href="#grid">Grid</a>
+                <a href="#animations">Animations</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="container hero-content">
+                <span class="eyebrow">WEEK 1 · CSS CHALLENGE</span>
+                <h1>Explore the Power of <span>CSS</span></h1>
+                <p>Three practical exercises demonstrating modern layouts, responsive design and smooth animations.</p>
+                <a href="#flexbox" class="primary-button">Explore Challenges</a>
+            </div>
+        </section>
+
+        <section class="section flexbox-section" id="flexbox">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">01 — FLEXBOX</span>
+                    <h2>What People Say</h2>
+                    <p>Flexible layouts that adapt beautifully to every screen size.</p>
+                </div>
+
+                <div class="testimonial-container">
+
+                    <article class="testimonial-card">
+                        <div class="quote-mark">“</div>
+                        <p class="testimonial-text">An excellent experience from start to finish. The attention to detail and quality of work exceeded my expectations.</p>
+                        <div class="customer-info">
+                            <div class="customer-avatar avatar-one">RS</div>
+                            <div>
+                                <h3>Rahul Sharma</h3>
+                                <span>Software Developer</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="quote-mark">“</div>
+                        <p class="testimonial-text">The design is clean, modern and incredibly easy to use. Everything feels thoughtfully designed.</p>
+                        <div class="customer-info">
+                            <div class="customer-avatar avatar-two">PV</div>
+                            <div>
+                                <h3>Priya Verma</h3>
+                                <span>UI/UX Designer</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="testimonial-card">
+                        <div class="quote-mark">“</div>
+                        <p class="testimonial-text">A professional approach, smooth experience and impressive results. I would definitely recommend it.</p>
+                        <div class="customer-info">
+                            <div class="customer-avatar avatar-three">AS</div>
+                            <div>
+                                <h3>Aman Singh</h3>
+                                <span>Business Analyst</span>
+                            </div>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section grid-section" id="grid">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">02 — CSS GRID</span>
+                    <h2>Explore Our Features</h2>
+                    <p>A structured grid layout with equal spacing and responsive columns.</p>
+                </div>
+
+                <div class="feature-grid">
+
+                    <article class="feature-card">
+                        <div class="feature-icon">01</div>
+                        <h3>Web Development</h3>
+                        <p>Building responsive and high-performance websites using modern technologies.</p>
+                        <span class="feature-tag">Development</span>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">02</div>
+                        <h3>UI/UX Design</h3>
+                        <p>Creating intuitive interfaces and meaningful digital experiences.</p>
+                        <span class="feature-tag">Design</span>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">03</div>
+                        <h3>Cloud Computing</h3>
+                        <p>Delivering scalable infrastructure and reliable cloud solutions.</p>
+                        <span class="feature-tag">Technology</span>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">04</div>
+                        <h3>Cyber Security</h3>
+                        <p>Protecting applications and digital systems through secure practices.</p>
+                        <span class="feature-tag">Security</span>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">05</div>
+                        <h3>Data Analytics</h3>
+                        <p>Turning information into useful insights for smarter decisions.</p>
+                        <span class="feature-tag">Analytics</span>
+                    </article>
+
+                    <article class="feature-card">
+                        <div class="feature-icon">06</div>
+                        <h3>AI & Machine Learning</h3>
+                        <p>Developing intelligent solutions that learn and improve over time.</p>
+                        <span class="feature-tag">Artificial Intelligence</span>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <section class="section animation-section" id="animations">
+            <div class="container">
+                <div class="section-heading">
+                    <span class="section-label">03 — CSS ANIMATIONS</span>
+                    <h2>Motion in Action</h2>
+                    <p>Subtle animations that make digital experiences more engaging.</p>
+                </div>
+
+                <div class="animation-grid">
+
+                    <article class="animation-card">
+                        <span class="animation-number">01</span>
+                        <h3>Button Interaction</h3>
+                        <p>Hover over the button to see a smooth transition.</p>
+                        <button class="animated-button" type="button">Hover Me</button>
+                    </article>
+
+                    <article class="animation-card">
+                        <span class="animation-number">02</span>
+                        <h3>Loading Spinner</h3>
+                        <p>A continuous rotation created using CSS keyframes.</p>
+                        <div class="spinner" role="status" aria-label="Loading"></div>
+                    </article>
+
+                    <article class="animation-card">
+                        <span class="animation-number">03</span>
+                        <h3>Card Lift Effect</h3>
+                        <p>Move your cursor over this card to see the effect.</p>
+                        <div class="lift-demo">Hover to Lift</div>
+                    </article>
+
+                    <article class="animation-card">
+                        <span class="animation-number">04</span>
+                        <h3>Fade-in Reveal</h3>
+                        <p>Content appears smoothly when the page loads.</p>
+                        <div class="fade-demo">Welcome to CSS Playground</div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© 2026 CSS Playground. Created as part of the Week 1 Web Development Challenge.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
